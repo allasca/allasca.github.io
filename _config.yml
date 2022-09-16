@@ -107,3 +107,4 @@ deploy:
   repo: https://github.com/allasca/allasca.github.io
   # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-pages
+  message: "up"
