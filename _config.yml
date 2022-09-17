@@ -98,6 +98,7 @@ include:
   - dani.md
   - multigram.md
   - refereel.md
+  - log.md
 exclude:
 ignore:
 
