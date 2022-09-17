@@ -1,19 +1,39 @@
-name: Hexo Build and Deploy
+name: HEXO CI
 
-on: [push]
+on:
+  push:
+    branches:
+    - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+
     steps:
       - uses: actions/checkout@v1
-      - name: Cache node modules
-        uses: actions/cache@v1
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
         with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
-      - uses: yrpang/github-actions-hexo@v1.3
-        with:
-          deploykey: ${{secrets.HEXO_DEPLOY_PRI}}
-          username: allasca
-          email: y.allasca@gmail.com
+          node-version: ${{ matrix.node-version }}
+
+      - name: Configuration environment
+        env:
+          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global user.name "allasca"
+          git config --global user.email "y.allasca@gmail.com"
+      - name: Install dependencies
+        run: |
+          npm i -g hexo-cli
+          npm i
+      - name: Deploy hexo
+        run: |
+          hexo clean && hexo generate && hexo deploy
