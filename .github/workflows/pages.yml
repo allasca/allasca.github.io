@@ -9,18 +9,23 @@ jobs:
     - name: Download Source file
       uses: actions/checkout@v2
     - name: Prepare Node env
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v2
       with:
         node-version: "16.x" # This corresponds to your own nodejs version (10.12 tested well)
     - name: Set Env
       env: 
         GITHUB_ACCESS_TOKEN: ${{ secrets.G_TOKEN }}  
       run: |
+        mkdir -p ~/.ssh/
+        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global user.name 'allasca'
         git config --global user.email 'y.allasca@gmail.com' 
         sed -i "s/GITHUB_ACCESS_TOKEN/$GITHUB_ACCESS_TOKEN/g" ./_config.yml
     - name: Deploy Hexo
       run: |
         npm install -g hexo-cli
+        nmp install
         npm install --save hexo-deployer-git
         hexo clean && hexo deploy
