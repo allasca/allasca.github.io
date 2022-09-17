@@ -12,6 +12,10 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: "16.x" # This corresponds to your own nodejs version (10.12 tested well)
+    - name: Install pandoc (Latex support)
+      run: |
+        wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.11.1/pandoc-2.11.1-1-amd64.deb
+        sudo dpkg -i pandoc.deb
     - name: Set Env
       env: 
         GITHUB_ACCESS_TOKEN: ${{ secrets.G_TOKEN }}  
