@@ -1,0 +1,45 @@
+{
+  "name": "hexo-theme-next",
+  "version": "8.13.0",
+  "description": "Elegant and powerful theme for Hexo.",
+  "main": "package.json",
+  "files": [
+    "docs",
+    "languages",
+    "layout",
+    "scripts",
+    "source",
+    "_config.yml",
+    "_vendors.yml"
+  ],
+  "scripts": {
+    "eslint": "eslint scripts/ source/js test/",
+    "prepare": "node .githooks/install.js",
+    "stylint": "stylint source/css/",
+    "test": "mocha test/index.js",
+    "test-cov": "c8 npm test"
+  },
+  "repository": "next-theme/hexo-theme-next",
+  "keywords": [
+    "hexo",
+    "theme",
+    "next"
+  ],
+  "author": "NexT (https://theme-next.js.org)",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/next-theme/hexo-theme-next/issues"
+  },
+  "homepage": "https://theme-next.js.org",
+  "devDependencies": {
+    "@next-theme/eslint-config": "0.0.3",
+    "c8": "7.12.0",
+    "chai": "4.3.6",
+    "eslint": "8.23.0",
+    "hexo": "6.2.0",
+    "hexo-renderer-marked": "5.0.0",
+    "js-yaml": "4.1.0",
+    "mocha": "10.0.0",
+    "stylint": "2.0.0"
+  }
+}
