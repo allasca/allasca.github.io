@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 | No | Nama | Exp | None/None |
+=======
+| No | Nama | Exp | 17Sep |
+>>>>>>> be245e2ccb90194c4c918044b159a3a0ccca659d
 |-----|-----|-----|-----|
 | 1 | YUDHA VIRMA ALLASCA  | 985 | 06:40-- |
 | 2 | SUROSO  | 355 | 06:40-- |
