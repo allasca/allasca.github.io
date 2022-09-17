@@ -8,8 +8,6 @@ jobs:
     steps:
     - name: Download Source file
       uses: actions/checkout@v2
-      with:
-        ref: source # Specify the name of the branch where you store Hexo source files
     - name: Prepare Node env
       uses: actions/setup-node@v1
       with:
