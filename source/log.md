@@ -1,4 +1,9 @@
-| No | Nama | Exp | 17Sep |
+
+---
+title: Dani Log
+comments: false
+---
+    | No | Nama | Exp | 17Sep |
 |-----|-----|-----|-----|
 | 1 | YUDHA VIRMA ALLASCA  | 985 | 06:40-15:55 |
 | 2 | SUROSO  | 355 | 06:40-15:56 |
