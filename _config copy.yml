@@ -93,11 +93,7 @@ pagination_dir: page
 ## include:/exclude: options only apply to the 'source/' folder
 include:
   - app-ads.txt
-  - animechan.md
-  - daimon.md
-  - dani.md
-  - multigram.md
-  - refereel.md
+  - 
 exclude:
 ignore:
 
