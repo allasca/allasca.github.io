@@ -1,4 +1,12 @@
 | No | Nama | Exp |
 |-----|-----|-----|
-| 1 | YUDHA VIRMA ALLASCA  | 3 |
-| 2 | SUROSO  | 3 |
+| 1 | YUDHA VIRMA ALLASCA  | 985 |
+| 2 | SUROSO  | 355 |
+| 3 | JOHAN ARI PITUTULU  | 354 |
+| 4 | WARIMAN  | 357 |
+| 5 | ARI SUPRIH BUDI KUNCORO  | 356 |
+| 6 | PITHUT GUNAWAN  | 355 |
+| 7 | EKO YUDISTIRO RONY ASHARI  | 355 |
+| 8 | DJETLI MARISHANNO LITAAY  | 31 |
+| 9 | HINU PULUNG MULIAWAN  | 37 |
+| 10 | DULKAMIT  | 36 |
