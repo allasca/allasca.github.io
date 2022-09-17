@@ -36,4 +36,5 @@ jobs:
           npm i
       - name: Deploy hexo
         run: |
+          git remote add origin git@github.com:allasca/allasca.github.io.git
           hexo clean && hexo generate && hexo deploy
