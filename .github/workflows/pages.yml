@@ -17,7 +17,7 @@ jobs:
         run: |
           git config --file=.gitmodules submodule.lib/next-theme.url https://${{ secrets.G_TOKEN }}:${{ secrets.G_TOKEN }}@github.com/next-theme/hexo-theme-next.git
           git submodule sync
-          git submodule update --init --recursive
+          git submodule update --force --recursive --init --remote
       
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
