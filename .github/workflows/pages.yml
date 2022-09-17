@@ -13,13 +13,12 @@ jobs:
         with:
           token: ${{ secrets.G_TOKEN }}
         
-      - name: Checkout submodules
-        shell: bash
+      - name: Checkout submodule
         run: |
-          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
-          git submodule sync --recursive
-          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
-    
+          git config --file=.gitmodules submodule.lib/next-theme.url https://${{ secrets.G_TOKEN }}:${{ secrets.G_TOKEN }}@github.com/next-theme/hexo-theme-next.git
+          git submodule sync
+          git submodule update --init --recursive
+      
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
         with:
