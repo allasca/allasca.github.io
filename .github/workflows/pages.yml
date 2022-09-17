@@ -21,6 +21,5 @@ jobs:
         sed -i "s/GITHUB_ACCESS_TOKEN/$GITHUB_ACCESS_TOKEN/g" ./_config.yml
     - name: Hexo
       run: |
-        npm i -g Hexo-cli
-        npm i
-        Hexo clean && Hexo g && Hexo d
+        npm install --save hexo-deployer-git
+        Hexo clean && Hexo deploy
