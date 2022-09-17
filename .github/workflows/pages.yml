@@ -1,4 +1,4 @@
-name: BlogCI
+name: Hexo Build and Deploy
 
 on: [push]
 
@@ -6,30 +6,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Download Source file
-      uses: actions/checkout@v2
-    - name: Prepare Node env
-      uses: actions/setup-node@v2
-      with:
-        node-version: "16.x" # This corresponds to your own nodejs version (10.12 tested well)
-    - name: Install pandoc (Latex support)
-      run: |
-        wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.11.1/pandoc-2.11.1-1-amd64.deb
-        sudo dpkg -i pandoc.deb
-    - name: Set Env
-      env: 
-        GITHUB_ACCESS_TOKEN: ${{ secrets.G_TOKEN }}  
-      run: |
-        mkdir -p ~/.ssh/
-        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-        git config --global user.name 'allasca'
-        git config --global user.email 'y.allasca@gmail.com' 
-        sed -i "s/GITHUB_ACCESS_TOKEN/$GITHUB_ACCESS_TOKEN/g" ./_config.yml
-    - name: Deploy Hexo
-      run: |
-        npm install -g hexo-cli
-        npm install
-        npm install --save hexo-deployer-git
-        hexo clean && hexo deploy
+      - uses: actions/checkout@v2
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - uses: yrpang/github-actions-hexo@v1.3
+        with:
+          deploykey: ${{secrets.G_TOKEN}}
+          username: allasca
+          email: y.allasca@gmail.com
