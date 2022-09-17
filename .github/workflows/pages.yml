@@ -12,14 +12,13 @@ jobs:
       - uses: actions/checkout@v2
         with:
           token: ${{ secrets.G_TOKEN }}
-
-      - name: Checkout submodules using a PAT
+        
+      - name: Checkout submodules
+        shell: bash
         run: |
-          git config --file .gitmodules --get-regexp url | while read url; do
-            git config --file=.gitmodules $(echo "$url" | sed -E "s/git@github.com:|https:\/\/github.com\//https:\/\/${{ secrets.G_TOKEN }}:${{ secrets.G_TOKEN }}@github.com\//")
-          done
-          git submodule sync
-          git submodule update --init --recursive
+          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
+          git submodule sync --recursive
+          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
     
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
