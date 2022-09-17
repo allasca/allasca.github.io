@@ -1,20 +1,23 @@
-name: deploying Hexo project to GitHub pages
+name: Hexo Deploy GitHub Pages
 on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+    - name: Checkout
+      uses: actions/checkout@master
 
-      - name: Build and Deploy
-        uses: theme-keep/hexo-deploy-github-pages-action@master
-        env:
-          PERSONAL_TOKEN: ${{ secrets.G_TOKEN }}
-          PUBLISH_REPOSITORY: theme-keep/site
-          BRANCH: gh-pages
-          PUBLISH_DIR: ./public
+    - name: Build and Deploy
+      uses: theme-keep/hexo-deploy-github-pages-action@master
+      env:
+        PERSONAL_TOKEN: ${{ secrets.G_TOKEN }}
+
+        # The repository the action should deploy to.
+        PUBLISH_REPOSITORY: allasca/allasca.github.io
+
+        # The branch the action should deploy to.
+        BRANCH: gh-pages
