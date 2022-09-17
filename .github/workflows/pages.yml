@@ -1,39 +1,20 @@
-name: HEXO CI
-
+name: deploying Hexo project to GitHub pages
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-      - uses: actions/checkout@v1
+      - name: Checkout
+        uses: actions/checkout@master
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Configuration environment
+      - name: Build and Deploy
+        uses: theme-keep/hexo-deploy-github-pages-action@master
         env:
-          HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
-        run: |
-          mkdir -p ~/.ssh/
-          echo "$HEXO_DEPLOY_PRI" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan github.com >> ~/.ssh/known_hosts
-          git config --global user.name "allasca"
-          git config --global user.email "y.allasca@gmail.com"
-      - name: Install dependencies
-        run: |
-          npm i -g hexo-cli
-          npm i
-      - name: Deploy hexo
-        run: |
-          hexo clean && hexo deploy
+          PERSONAL_TOKEN: ${{ secrets.G_TOKEN }}
+          PUBLISH_REPOSITORY: theme-keep/site
+          BRANCH: gh-pages
+          PUBLISH_DIR: ./public
