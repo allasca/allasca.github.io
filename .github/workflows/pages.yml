@@ -19,7 +19,8 @@ jobs:
         git config --global user.name 'allasca'
         git config --global user.email 'y.allasca@gmail.com' 
         sed -i "s/GITHUB_ACCESS_TOKEN/$GITHUB_ACCESS_TOKEN/g" ./_config.yml
-    - name: Hexo
+    - name: Deploy Hexo
       run: |
+        npm install -g hexo-cli
         npm install --save hexo-deployer-git
-        Hexo clean && Hexo deploy
+        hexo clean && hexo deploy
