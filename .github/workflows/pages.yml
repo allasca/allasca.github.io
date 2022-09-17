@@ -9,10 +9,10 @@ jobs:
   pages:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v1
         with:
           token: ${{ secrets.G_TOKEN }}
-          submodules: recursive
+          submodules: 'true'
       
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
