@@ -1,32 +1,48 @@
-name: Pages
+name: Deploy Hexo
 
 on:
   push:
     branches:
-      - main  # default branch
+      - main
 
 jobs:
-  pages:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
-          restore-keys: |
-            ${{ runner.OS }}-npm-cache
-      - name: Install Dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.G_TOKEN }}
-          publish_dir: ./public
+    - name: Checkout
+      uses: actions/checkout@v1
+
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2-beta
+      with:
+        node-version: '16'
+
+    - name: Install pandoc (Latex support)
+      run: |
+        wget -O pandoc.deb https://github.com/jgm/pandoc/releases/download/2.11.1/pandoc-2.11.1-1-amd64.deb
+        sudo dpkg -i pandoc.deb
+
+    - name: Set git environment
+      env: 
+        # 1. Add this private key and title as DEPLOY_KEY in this repo -> settings/secrets
+        # 2. Add corresponding public key and named as any text to the github page repo -> settings/deploy keys
+        DEPLOY_KEY: ${{ secrets.G_KEY }}
+        USERNAME: allasca
+        EMAIL: y.allasca@gmail.com
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global user.name "$USERNAME"
+        git config --global user.email "$EMAIL"
+
+    - name: Setup Hexo environment
+      run: |
+        npm install -g hexo-cli
+        npm install
+
+    - name: Deploy Hexo
+      run: |
+        hexo g
+        hexo d
