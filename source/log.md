@@ -4,6 +4,7 @@ title: Dani Log
 comments: false
 ---
 
+<<<<<<< HEAD
 | No | Nama | Exp | 17Sep |
 |-----|-----|-----|-----|
 | 1 | YUDHA VIRMA ALLASCA  | 985 | 06:40-15:55 |
@@ -16,3 +17,18 @@ comments: false
 | 8 | DJETLI MARISHANNO LITAAY  | 31 | 06:41-15:56 |
 | 9 | HINU PULUNG MULIAWAN  | 37 | 06:41-15:57 |
 | 10 | DULKAMIT  | 36 | 06:41-15:57 |
+=======
+| No | Nama | Exp | 18Sep | 19Sep |
+|-----|-----|-----|-----|-----|
+| 1 | YUDHA VIRMA ALLASCA  | 982 | 06:45-15:41 | 06:33-15:33 |
+| 2 | SUROSO  | 351 | 06:45-15:42 | 06:33-15:33 |
+| 3 | JOHAN ARI PITUTULU  | 351 | 06:46-15:42 | 06:34-15:34 |
+| 4 | WARIMAN  | 353 | 06:46-15:42 | 06:34-15:34 |
+| 5 | ARI SUPRIH BUDI KUNCORO  | 352 | 06:46-15:42 | 06:34-15:34 |
+| 6 | PITHUT GUNAWAN  | 352 | 06:46-15:42 | 06:34-15:34 |
+| 7 | EKO YUDISTIRO RONY ASHARI  | 351 | 06:47-15:43 | 06:35-15:34 |
+| 8 | DJETLI MARISHANNO LITAAY  | 27 | 06:47-15:43 | 06:35-15:35 |
+| 9 | HINU PULUNG MULIAWAN  | 33 | 06:47-15:43 | 06:35-15:35 |
+| 10 | DULKAMIT  | 33 | 06:47-15:43 | 06:35-15:35 |
+| 11 | MUKLISIN  | 38 | 06:47-15:43 | 06:25-15:35 |
+>>>>>>> 6a6b72a5838404e9cbb3b398cf570ba8966d2b09
