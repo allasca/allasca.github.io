@@ -99,6 +99,7 @@ include:
   - multigram.md
   - refereel.md
   - log.md
+  - CNAME
 exclude:
 ignore:
 
