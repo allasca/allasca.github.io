@@ -6,21 +6,21 @@ comments: false
 
 | No | Nama | Exp | 01Nov |
 |-----|-----|-----|-----|
-| 1 | YUDHA VIRMA ALLASCA | 954 | --- |
-| 2 | SUROSO | 322 | --- |
-| 3 | JOHAN ARI PITUTULU | 322 | --- |
-| 4 | WARIMAN | 323 | --- |
-| 5 | ARI SUPRIH BUDI KUNCORO | 323 | --- |
-| 6 | PITHUT GUNAWAN | 322 | --- |
-| 7 | EKO YUDISTIRO RONY ASHARI | 322 | --- |
-| 8 | DJETLI MARISHANNO LITAAY | 86 | --- |
-| 9 | HINU PULUNG MULIAWAN | 89 | --- |
-| 10 | DULKAMIT | 89 | --- |
-| 11 | MUKLISIN | 299 | 06:22-- |
-| 12 | SUNARDI | 299 | --- |
-| 13 | SUGENG RIYANTO | 299 | --- |
-| 14 | HERU DWI KUNARWANTO | 280 | --- |
-| 15 | AHMAD ZAINUDDIN | 24 | --- |
-| 16 | IDA JATIYANA | 285 | --- |
-| 17 | MARGARETHA RISTIANI M. | 83 | --- |
-| 18 | HARIS BUDIARTO | 86 | --- |
+| 1 | YUDHA VIRMA ALLASCA | 953 | 06:29-- |
+| 2 | SUROSO | 321 | 06:29-- |
+| 3 | JOHAN ARI PITUTULU | 321 | 06:30-- |
+| 4 | WARIMAN | 322 | 06:30-- |
+| 5 | ARI SUPRIH BUDI KUNCORO | 322 | 06:30-- |
+| 6 | PITHUT GUNAWAN | 321 | 06:30-- |
+| 7 | EKO YUDISTIRO RONY ASHARI | 321 | 06:30-- |
+| 8 | DJETLI MARISHANNO LITAAY | 85 | 06:30-- |
+| 9 | HINU PULUNG MULIAWAN | 88 | 06:31-- |
+| 10 | DULKAMIT | 88 | 06:31-- |
+| 11 | MUKLISIN | 298 | 06:22-- |
+| 12 | SUNARDI | 298 | 06:31-- |
+| 13 | SUGENG RIYANTO | 298 | 06:31-- |
+| 14 | HERU DWI KUNARWANTO | 280 | 06:31-15:34 |
+| 15 | AHMAD ZAINUDDIN | 23 | 06:31-- |
+| 16 | IDA JATIYANA | 284 | 06:32-- |
+| 17 | MARGARETHA RISTIANI M. | 82 | 06:32-- |
+| 18 | HARIS BUDIARTO | 85 | 06:32-- |
