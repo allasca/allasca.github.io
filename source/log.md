@@ -6,22 +6,22 @@ comments: false
 
 | No | Nama | Exp | 14Nov | 15Nov | 16Nov |
 |-----|-----|-----|-----|-----|-----|
-| 1 | YUDHA VIRMA ALLASCA | 946 | 06:19-- | --- | --- |
-| 2 | SUROSO | 314 | 06:19-- | --- | --- |
-| 3 | JOHAN ARI PITUTULU | 314 | 06:20-- | --- | --- |
-| 4 | WARIMAN | 315 | 06:20-- | --- | --- |
-| 5 | ARI SUPRIH BUDI KUNCORO | 314 | 06:20-- | --- | --- |
-| 6 | PITHUT GUNAWAN | 314 | 05:27-15:25 | 06:16-- | 05:37-- |
-| 7 | EKO YUDISTIRO RONY ASHARI | 313 | 06:20-- | --- | --- |
-| 8 | DJETLI MARISHANNO LITAAY | 77 | 06:20-- | --- | --- |
-| 9 | HINU PULUNG MULIAWAN | 80 | 06:20-- | --- | --- |
-| 10 | DULKAMIT | 80 | 06:20-- | --- | --- |
-| 11 | MUKLISIN | 291 | 06:21-- | --- | --- |
-| 12 | SUNARDI | 290 | 06:21-- | --- | --- |
-| 13 | SUGENG RIYANTO | 290 | 06:21-- | --- | --- |
+| 1 | YUDHA VIRMA ALLASCA | 945 | 06:19-- | --- | 06:41-- |
+| 2 | SUROSO | 313 | 06:19-- | --- | 06:41-- |
+| 3 | JOHAN ARI PITUTULU | 313 | 06:20-- | --- | 06:41-- |
+| 4 | WARIMAN | 314 | 06:20-- | --- | 06:41-- |
+| 5 | ARI SUPRIH BUDI KUNCORO | 313 | 06:20-- | --- | 06:41-- |
+| 6 | PITHUT GUNAWAN | 313 | 05:27-15:25 | 06:16-- | 05:37-- |
+| 7 | EKO YUDISTIRO RONY ASHARI | 312 | 06:20-- | --- | 06:42-- |
+| 8 | DJETLI MARISHANNO LITAAY | 76 | 06:20-- | --- | 06:42-- |
+| 9 | HINU PULUNG MULIAWAN | 79 | 06:20-- | --- | 06:42-- |
+| 10 | DULKAMIT | 79 | 06:20-- | --- | 06:42-- |
+| 11 | MUKLISIN | 290 | 06:21-- | --- | 06:42-- |
+| 12 | SUNARDI | 289 | 06:21-- | --- | 06:42-- |
+| 13 | SUGENG RIYANTO | 274 | 06:21-- | --- | 06:43-- |
 | 14 | HERU DWI KUNARWANTO | 274 | 06:02-- | 06:11-- | 06:42-- |
-| 15 | AHMAD ZAINUDDIN | 15 | 06:21-- | --- | --- |
-| 16 | IDA JATIYANA | 276 | 06:21-- | --- | --- |
-| 17 | MARGARETHA RISTIANI M. | 77 | 06:21-15:35 | --- | --- |
-| 18 | HARIS BUDIARTO | 77 | 06:21-- | --- | --- |
-| 19 | SUSWANTO | 599 | 06:22-- | --- | --- |
+| 15 | AHMAD ZAINUDDIN | 14 | 06:21-- | --- | 06:43-- |
+| 16 | IDA JATIYANA | 275 | 06:21-- | --- | 06:43-- |
+| 17 | MARGARETHA RISTIANI M. | 77 | 06:21-15:35 | --- | 06:43-15:44 |
+| 18 | HARIS BUDIARTO | 76 | 06:21-- | --- | 06:43-- |
+| 19 | SUSWANTO | 598 | 06:22-- | --- | 06:43-- |
