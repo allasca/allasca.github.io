@@ -6,12 +6,12 @@ comments: false
 
 | No | Nama | Exp | 01Mar | 02Mar |
 |-----|-----|-----|-----|-----|
-| 1 | YUDHA VIRMA ALLASCA | 872 | 05:16-16:15 | --- |
-| 2 | YUDHA VIRMA ALLASCA | 872 | 05:16-16:15 | --- |
-| 3 | JOHAN ARI PITUTULU | 244 | 05:17-- |
-| 4 | JOHAN ARI PITUTULU | 244 | 05:17-- |
-| 5 | JOHAN ARI PITUTULU | 244 | 05:17-- |
-| 6 | JOHAN ARI PITUTULU | 244 | 05:17-- |
+| 1 | YUDHA VIRMA ALLASCA | 872 | 05:16-16:15 | 04:17-- |
+| 2 | YUDHA VIRMA ALLASCA | 872 | 05:16-16:15 | 04:17-- |
+| 3 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
+| 4 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
+| 5 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
+| 6 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
 | 7 | EKO YUDISTIRO RONY ASHARI | 241 | 06:03-16:16 | --- |
 | 8 | EKO YUDISTIRO RONY ASHARI | 241 | 06:03-16:16 | --- |
 | 9 | HINU PULUNG MULIAWAN | 12 | 05:17-16:16 | --- |
