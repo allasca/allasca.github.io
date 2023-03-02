@@ -6,24 +6,24 @@ comments: false
 
 | No | Nama | Exp | 01Mar | 02Mar |
 |-----|-----|-----|-----|-----|
-| 1 | YUDHA VIRMA ALLASCA | 872 | 05:16-16:15 | 04:17-- |
-| 2 | YUDHA VIRMA ALLASCA | 872 | 05:16-16:15 | 04:17-- |
-| 3 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
-| 4 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
-| 5 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
-| 6 | JOHAN ARI PITUTULU | 244 | 05:17-- | --- |
+| 1 | YUDHA VIRMA ALLASCA | 871 | 05:16-16:15 | 04:17-- |
+| 2 | YUDHA VIRMA ALLASCA | 871 | 05:16-16:15 | 04:17-- |
+| 3 | JOHAN ARI PITUTULU | 243 | 05:17-- | 06:06-- |
+| 4 | JOHAN ARI PITUTULU | 243 | 05:17-- | 06:06-- |
+| 5 | JOHAN ARI PITUTULU | 243 | 05:17-- | 06:06-- |
+| 6 | JOHAN ARI PITUTULU | 243 | 05:17-- | 06:06-- |
 | 7 | EKO YUDISTIRO RONY ASHARI | 241 | 06:03-16:16 | --- |
 | 8 | EKO YUDISTIRO RONY ASHARI | 241 | 06:03-16:16 | --- |
 | 9 | HINU PULUNG MULIAWAN | 12 | 05:17-16:16 | --- |
 | 10 | HINU PULUNG MULIAWAN | 12 | 05:17-16:16 | --- |
 | 11 | MUKLISIN | 237 | 05:18-- | 05:21-- |
 | 12 | MUKLISIN | 237 | 05:18-- | 05:21-- |
-| 13 | SUGENG RIYANTO | 220 | 05:18-16:17 | --- |
-| 14 | SUGENG RIYANTO | 220 | 05:18-16:17 | --- |
+| 13 | SUGENG RIYANTO | 219 | 05:18-16:17 | 04:18-- |
+| 14 | SUGENG RIYANTO | 219 | 05:18-16:17 | 04:18-- |
 | 15 | AHMAD ZAINUDDIN | 47 | 05:18-- | --- |
 | 16 | IDA JATIYANA | 204 | 05:18-16:17 | 04:19-- |
 | 17 | MARGARETHA RISTIANI M. | 15 | 05:18-16:17 | 04:19-- |
-| 18 | HARIS BUDIARTO | 9 | 05:18-- | 04:19-- |
-| 19 | HARIS BUDIARTO | 9 | 05:18-- | 04:19-- |
-| 20 | HARIS BUDIARTO | 9 | 05:18-- | 04:19-- |
-| 21 | SYELA RANSY TONAPA | 284 | 05:19-16:18 |
+| 18 | HARIS BUDIARTO | 8 | 05:18-- | 04:19-- |
+| 19 | HARIS BUDIARTO | 8 | 05:18-- | 04:19-- |
+| 20 | HARIS BUDIARTO | 8 | 05:18-- | 04:19-- |
+| 21 | SYELA RANSY TONAPA | 283 | 05:19-16:18 | 07:33-- |
