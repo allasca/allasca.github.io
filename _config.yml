@@ -98,7 +98,7 @@ include:
   - dani.md
   - multigram.md
   - refereel.md
-  - log.md
+  - dani.log
   - CNAME
 exclude:
 ignore:
