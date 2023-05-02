@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: "source/google549d35e8ae56510a.html"
+skip_render: "/google549d35e8ae56510a.html"
 
 # Writing
 new_post_name: :title.md # File name of new posts
