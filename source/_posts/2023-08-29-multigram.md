@@ -3,7 +3,7 @@ title: Multigram
 ---
 
 [Multigram](https://play.google.com/store/apps/details?id=id.allasca.multigram) adalah sebuah aplikasi multi username dengan menggunakan [API](https://en.wikipedia.org/wiki/API) dari [Badgeni.us](http://badgeni.us/) yang merupakan official dari [Miggi](https://miggi.id/), dengan sejumlah modifikasi fungsi yang disengaja.
-
+<!-- more -->
 ## Quick Start
 
 Semua delay didalam aplikasi ini menggunakan satuan milidetik, kecuali dalam pingpong delay menggunakan detik (pingpong delay standart: 58-59 detik).
