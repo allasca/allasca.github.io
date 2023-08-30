@@ -3,6 +3,7 @@ title: Kick Mode & Target Mode
 ---
 ## Kick Mode
 Contoh singkat tentang kick, socket dan loop didalam aplikasi Multigram. Ditulis dengan metode pengiriman data secara struktural dari atas ke bawah dari troop ke enemy berupa 3 troop vs 3 enemy dalam duel, dengan k/s/l 10/20/30.
+<!-- more -->
 ``` php
 Delay kick: delay setelah ID mengirim data kick
 Delay socket: delay sebelum ID selanjutnya mengirim data kick
