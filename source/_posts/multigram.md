@@ -1,5 +1,6 @@
 ---
 title: Multigram
+date: 2023-08-29 00:00:00
 ---
 
 [Multigram](https://play.google.com/store/apps/details?id=id.allasca.multigram) adalah sebuah aplikasi multi username dengan menggunakan [API](https://en.wikipedia.org/wiki/API) dari [Badgeni.us](http://badgeni.us/) yang merupakan official dari [Miggi](https://miggi.id/), dengan sejumlah modifikasi fungsi yang disengaja.

@@ -1,5 +1,6 @@
 ---
 title: Kick Mode & Target Mode
+date: 2023-08-30 00:00:00
 ---
 ## Kick Mode
 Contoh singkat tentang kick, socket dan loop didalam aplikasi Multigram. Ditulis dengan metode pengiriman data secara struktural dari atas ke bawah dari troop ke enemy berupa 3 troop vs 3 enemy dalam duel, dengan k/s/l 10/20/30.
