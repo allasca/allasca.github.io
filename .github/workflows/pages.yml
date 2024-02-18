@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - xxxmain  # default branch
+      - main  # default branch
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         with:
-          #token: ${{ secrets.G_TOKEN }}
+          token: ${{ secrets.G_TOKEN }}
           # If your repository depends on submodule, please see: https://github.com/actions/checkout
           submodules: recursive
       - name: Use Node.js 16.x
