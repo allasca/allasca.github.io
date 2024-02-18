@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        #with:
-          #token: ${{ secrets.G_TOKEN }}
+        with:
+          token: ${{ secrets.G_TOKEN }}
         
       - name: Checkout submodule
         run: |
