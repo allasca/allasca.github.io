@@ -2,8 +2,8 @@ name: Pages
 
 on:
   push:
-  #  branches:
-      #- main  # default branch
+    branches:
+      - qwerty  # default branch
 
 jobs:
   pages:
