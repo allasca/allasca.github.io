@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - xmain  # default branch
+      - main  # default branch
 
 jobs:
   pages:
