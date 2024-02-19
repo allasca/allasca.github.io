@@ -1,7 +1,0 @@
-{%- if theme.google_analytics.tracking_id %}
-  {%- if not theme.google_analytics.only_pageview %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ theme.google_analytics.tracking_id }}"></script>
-  {%- endif %}
-  {{ next_data('google_analytics', theme.google_analytics) }}
-  {{ next_js('third-party/analytics/google-analytics.js') }}
-{%- endif %}
