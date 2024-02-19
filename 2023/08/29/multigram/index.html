@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha256-yIDrPSXHZdOZhAqiBP7CKzIwMQmRCJ8UeB8Jo17YC4o=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"allasca.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.19.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Multigram adalah sebuah aplikasi multi username dengan menggunakan API dari Badgeni.us yang merupakan official dari Miggi, dengan sejumlah modifikasi fungsi yang disengaja.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Multigram">
+<meta property="og:url" content="http://allasca.github.io/2023/08/29/multigram/index.html">
+<meta property="og:site_name" content="Allasca">
+<meta property="og:description" content="Multigram adalah sebuah aplikasi multi username dengan menggunakan API dari Badgeni.us yang merupakan official dari Miggi, dengan sejumlah modifikasi fungsi yang disengaja.">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-08-29T00:00:00.000Z">
+<meta property="article:modified_time" content="2024-02-19T06:19:41.101Z">
+<meta property="article:author" content="Allasca">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://allasca.github.io/2023/08/29/multigram/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://allasca.github.io/2023/08/29/multigram/","path":"2023/08/29/multigram/","title":"Multigram"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Multigram | Allasca</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Allasca</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Meh is the new normal</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab-Auth"><span class="nav-number">1.1.</span> <span class="nav-text">Tab Auth</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab-Troop"><span class="nav-number">1.2.</span> <span class="nav-text">Tab Troop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab-Spy"><span class="nav-number">1.3.</span> <span class="nav-text">Tab Spy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab-Duel"><span class="nav-number">1.4.</span> <span class="nav-text">Tab Duel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab-Tool"><span class="nav-number">1.5.</span> <span class="nav-text">Tab Tool</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tab-Log"><span class="nav-number">1.6.</span> <span class="nav-text">Tab Log</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Allasca</p>
+  <div class="site-description" itemprop="description">Meh is the new normal</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://allasca.github.io/2023/08/29/multigram/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Allasca">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Allasca">
+      <meta itemprop="description" content="Meh is the new normal">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Multigram | Allasca">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Multigram
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2023-08-29 00:00:00" itemprop="dateCreated datePublished" datetime="2023-08-29T00:00:00+00:00">2023-08-29</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-02-19 06:19:41" itemprop="dateModified" datetime="2024-02-19T06:19:41+00:00">2024-02-19</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=id.allasca.multigram">Multigram</a> adalah sebuah aplikasi multi username dengan menggunakan <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/API">API</a> dari <a target="_blank" rel="noopener" href="http://badgeni.us/">Badgeni.us</a> yang merupakan official dari <a target="_blank" rel="noopener" href="https://miggi.id/">Miggi</a>, dengan sejumlah modifikasi fungsi yang disengaja.</p>
+<span id="more"></span>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p>Semua delay didalam aplikasi ini menggunakan satuan milidetik, kecuali dalam pingpong delay menggunakan detik (pingpong delay standart: 58-59 detik).</p>
+<table>
+<thead>
+<tr>
+<th>Detik</th>
+<th>Milidetik</th>
+<th>Detik</th>
+<th>Milidetik</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>50</td>
+<td>50000</td>
+<td>0,5</td>
+<td>500</td>
+</tr>
+<tr>
+<td>10</td>
+<td>10000</td>
+<td>0,1</td>
+<td>100</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1000</td>
+<td>0,01</td>
+<td>10</td>
+</tr>
+</tbody></table>
+<p>Jika terdapat error dalam penggunaan App hidupkan fitur Lock in Ram yang ada di bagian setting.<br>Apabila masih terdapat error gunakan tips di link berikut <a target="_blank" rel="noopener" href="https://dontkillmyapp.com/">https://dontkillmyapp.com/</a></p>
+<h3 id="Tab-Auth"><a href="#Tab-Auth" class="headerlink" title="Tab Auth"></a>Tab Auth</h3><p>Sebuah username dan password akun Miggi diperlukan untuk menggunakan aplikasi Multigram, disarankan bukan akun master. Apabila sudah melakukan login auth dan mendapatkan jawaban</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">NOT AUTHORIZED atau LOADING</span><br></pre></td></tr></table></figure>
+<p>Sila kontak saya di</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1. Chatroom Multigram</span><br><span class="line">2. Email ke y.allasca@gmail.com</span><br></pre></td></tr></table></figure>
+
+<h3 id="Tab-Troop"><a href="#Tab-Troop" class="headerlink" title="Tab Troop"></a>Tab Troop</h3><p>Untuk memasukkan multi kedalam aplikasi gunakan icon gear. Isi multi dengan format <strong>username1:password1</strong> dengan pembatas antara username menggunakan koma, di username terakhir tidak perlu ada koma atau multi tidak dapat disimpan. Berikan nama untuk set troop multi dalam kolom Title.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">puisisenja01.txt:password123, puisisenja02.txt:password123, puisisenja03.txt:password123, puisisenja04.txt:password123, puisisenja05.txt:password123, puisisenja06.txt:password123, puisisenja07.txt:password123, puisisenja08.txt:password123, puisisenja09.txt:password123, puisisenja10.txt:password123</span><br></pre></td></tr></table></figure>
+<p>Tidak ada batasan jumlah username dalam memasukkan set troop.</p>
+<h3 id="Tab-Spy"><a href="#Tab-Spy" class="headerlink" title="Tab Spy"></a>Tab Spy</h3><table>
+<thead>
+<tr>
+<th>Opsi</th>
+<th>Fungsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>List user</td>
+<td>Mengambil participants dalam room</td>
+</tr>
+<tr>
+<td>Enter</td>
+<td>Memasukkan multi dalam room</td>
+</tr>
+<tr>
+<td>Leave</td>
+<td>Mengeluarkan multi dari room</td>
+</tr>
+<tr>
+<td>Kick selected</td>
+<td>Kick manual user yang sudah dicentang</td>
+</tr>
+<tr>
+<td>All</td>
+<td>Mencentang semua isi room</td>
+</tr>
+<tr>
+<td>None</td>
+<td>Menghapus semua centang</td>
+</tr>
+<tr>
+<td>List target</td>
+<td>Manual list target series multi menggunakan pola (DUEL)</td>
+</tr>
+<tr>
+<td>@</td>
+<td>Auto list target tanpa pola (DUEL)</td>
+</tr>
+<tr>
+<td>Auto vote</td>
+<td>Auto vote ketika ada yang start di room</td>
+</tr>
+<tr>
+<td>Kick selected delay</td>
+<td>Delay untuk manual kick selected</td>
+</tr>
+<tr>
+<td>Safe username</td>
+<td>Username tidak akan divote ketika auto vote menyala</td>
+</tr>
+<tr>
+<td>Enter delay</td>
+<td>Delay ketika multi masuk room</td>
+</tr>
+<tr>
+<td>Leave delay</td>
+<td>Delay ketika multi keluar room</td>
+</tr>
+</tbody></table>
+<h3 id="Tab-Duel"><a href="#Tab-Duel" class="headerlink" title="Tab Duel"></a>Tab Duel</h3><table>
+<thead>
+<tr>
+<th>Opsi</th>
+<th>Fungsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Enable duel</td>
+<td>Aktifkan ini sebelum wasit melakukan start kick</td>
+</tr>
+<tr>
+<td>Kick mode</td>
+<td>Terdapat 3 kick mode dalam aplikasi ini, standart 1 vs 10</td>
+</tr>
+<tr>
+<td>Target mode</td>
+<td>Terdapat 5 cara pengurutan multi musuh</td>
+</tr>
+<tr>
+<td>1st k&#x2F;s&#x2F;l</td>
+<td>Delay kick, socket, dan loop</td>
+</tr>
+<tr>
+<td>2nd k&#x2F;s&#x2F;l</td>
+<td>Delay kick, socket, loop, dan delay timer perubahan</td>
+</tr>
+<tr>
+<td>3rd k&#x2F;s&#x2F;l</td>
+<td>Delay kick, socket, loop, dan delay timer perubahan</td>
+</tr>
+<tr>
+<td>Auto vote</td>
+<td>Delay troop untuk memberikan vote pada musuh dalam waktu tertentu jika belum kicked</td>
+</tr>
+<tr>
+<td>Suicide vote</td>
+<td>Delay troop untuk memberikan vote bunuh diri dalam waktu tertentu jika belum kicked</td>
+</tr>
+<tr>
+<td>Auto stop</td>
+<td>Menghentikan duel dalam delay waktu tertentu dihitung dari mulainya timer kicking</td>
+</tr>
+<tr>
+<td>Ratio enemy&#x2F;troop</td>
+<td>Menghentikan duel ketika sisa enemy&#x2F;troop kurang dari kebutuhan vote (more needed)</td>
+</tr>
+<tr>
+<td>Dynamic k&#x2F;s&#x2F;l</td>
+<td>Delay dinamis ketika troop&#x2F;enemy kicked dengan tujuan mempertahankan total delay supaya tidak suspended. Delay dinamis automatis menambah delay sedikit demi sedikit dibalik layar</td>
+</tr>
+<tr>
+<td>Timer kicking</td>
+<td>Delay aplikasi memulai melakukan kick. Exp pada detik ke 59 (1 detik sebelum failed) maka delay adalah 59000</td>
+</tr>
+</tbody></table>
+<h3 id="Tab-Tool"><a href="#Tab-Tool" class="headerlink" title="Tab Tool"></a>Tab Tool</h3><table>
+<thead>
+<tr>
+<th>Opsi</th>
+<th>Fungsi</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Starter username</td>
+<td>Untuk membantu start atau membantu mengisi room menjadi 23 (DUEL)</td>
+</tr>
+<tr>
+<td>Auto enter troop</td>
+<td>Memberikan perintah enter troop secara berkala pada delay tertentu</td>
+</tr>
+<tr>
+<td>Start roll</td>
+<td>Sudah tidak berfungsi</td>
+</tr>
+<tr>
+<td>Ping latency</td>
+<td>Menghitung jarak data dari android ke server dan kembali ke android dalam satuan milidetik</td>
+</tr>
+</tbody></table>
+<h3 id="Tab-Log"><a href="#Tab-Log" class="headerlink" title="Tab Log"></a>Tab Log</h3><p>Membaca log kick ketika duel, dapat di aktifkan di bagian setting App. Tidak disarakan hidup agar tidak membebani proses kick.</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/08/30/kicktarget/" rel="next" title="Kick Mode & Target Mode">
+                  Kick Mode & Target Mode <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Allasca</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
