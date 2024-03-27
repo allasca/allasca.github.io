@@ -407,8 +407,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/allasca
 
 
 # ---------------------------------------------------------------
@@ -684,8 +684,8 @@ comments:
 # Disqus
 # For more information: https://disqus.com
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: allasca-github-io
   count: true
 
 # DisqusJS
@@ -733,8 +733,8 @@ gitalk:
 # Utterances
 # For more information: https://utteranc.es
 utterances:
-  enable: false
-  repo: user-name/repo-name # Github repository owner and name
+  enable: true
+  repo: allasca/allasca.github.io # Github repository owner and name
   # Available values: pathname | url | title | og:title
   issue_term: pathname
   # Available values: github-light | github-dark | preferred-color-scheme | github-dark-orange | icy-dark | dark-blue | photon-dark | boxy-light
