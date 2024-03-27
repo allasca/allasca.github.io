@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - 9main  # default branch
+      - main  # default branch
 
 jobs:
   build:
