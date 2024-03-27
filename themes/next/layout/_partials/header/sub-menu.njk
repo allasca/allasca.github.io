@@ -1,0 +1,12 @@
+{% import '_partials/header/menu-item.njk' as menu_item with context %}
+
+{%- if theme.menu and is_page() %}
+  {%- set menus = next_menu(page.path) %}
+  {%- for menu in menus %}
+    <ul class="sub-menu menu">
+    {%- for node in menu %}
+      {{ menu_item.render(node) }}
+    {%- endfor %}
+    </ul>
+  {%- endfor %}
+{%- endif %}

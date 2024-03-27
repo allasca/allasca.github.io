@@ -1,0 +1,18 @@
+  <div class="links-of-blogroll-title">
+    {%- if theme.related_posts.icon %}<i class="{{ theme.related_posts.icon }} fa-fw"></i>{% endif %}
+    {{ __('post.related_posts') }}
+  </div>
+  <ul class="popular-posts">
+  {%- for path in page.related_posts %}
+    {%- set popular_post = site.posts.findOne({ path: path }) %}
+    <li class="popular-posts-item">
+      <a class="popular-posts-link" href="{{ url_for(popular_post.path) }}" rel="bookmark">
+      {%- if popular_post.date %}
+        <time class="popular-posts-time">{{ date(popular_post.date) }}</time>
+        <br>
+      {%- endif %}
+      {{ popular_post.title }}
+      </a>
+    </li>
+  {%- endfor %}
+  </ul>

@@ -1,0 +1,20 @@
+{%- include 'vendors.njk' -%}
+
+{{- next_js('comments.js') }}
+
+{{- next_js('utils.js') }}
+{%- if theme.motion.enable %}
+  {{- next_js('motion.js') }}
+{%- endif %}
+
+{%- if theme.scheme === 'Muse' or theme.scheme === 'Mist' %}
+  {{- next_js('schemes/muse.js') }}
+{%- endif %}
+
+{{- next_js('next-boot.js') }}
+{%- if theme.bookmark.enable %}
+  {{- next_js('bookmark.js') }}
+{%- endif %}
+{%- if theme.pjax %}
+  {{- next_js('pjax.js') }}
+{%- endif %}

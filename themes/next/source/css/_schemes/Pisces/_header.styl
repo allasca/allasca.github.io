@@ -1,0 +1,35 @@
+.column {
+  width: $sidebar-desktop;
+
+  +tablet-mobile() {
+    width: auto;
+  }
+}
+
+.site-brand-container {
+  background: var(--theme-color);
+
+  .site-nav-on & {
+    +tablet-mobile() {
+      box-shadow: 0 0 16px rgba(0, 0, 0, .5);
+    }
+  }
+}
+
+.site-meta {
+  padding: 20px 0;
+}
+
+.site-nav-toggle, .site-nav-right {
+  +tablet() {
+    flex-column();
+  }
+
+  .toggle {
+    color: white;
+
+    .toggle-line {
+      background: white;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+  {{ partial('_partials/head/head.njk', {}, {cache: theme.cache.enable}) }}
+  {%- include '_partials/head/head-unique.njk' -%}
+  <title>{% block title %}{% endblock %}</title>
+  {{ partial('_third-party/analytics/index.njk', {}, {cache: theme.cache.enable}) }}
+  {{- next_inject('head') }}
+  <noscript>
+    <link rel="stylesheet" href="{{ url_for(theme.css) }}/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage"{% if theme.motion.enable %} class="use-motion"{% endif %}>
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+        {%- include '_partials/header/index.njk' -%}
+      </header>
+      {%- if theme.sidebar.display !== 'remove' %}
+        {% block sidebar %}{% endblock %}
+      {%- endif %}
+    </div>
+
+    <div class="main-inner {% block class %}{% endblock %}">
+      {%- include '_partials/header/sub-menu.njk' -%}
+      {% block content %}{% endblock %}
+      {%- include '_partials/comments.njk' -%}
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      {%- include '_partials/languages.njk' -%}
+      {{ partial('_partials/footer.njk', {}, {cache: theme.cache.enable}) }}
+    </div>
+  </footer>
+
+  {{ partial('_partials/widgets.njk', {}, {cache: theme.cache.enable}) }}
+
+  {{ partial('_scripts/index.njk', {}, {cache: theme.cache.enable}) }}
+  {{ partial('_third-party/index.njk', {}, {cache: theme.cache.enable}) }}
+  {{ partial('_third-party/statistics/index.njk', {}, {cache: theme.cache.enable}) }}
+
+  {%- include '_third-party/math/index.njk' -%}
+  {%- include '_third-party/quicklink.njk' -%}
+
+  {{- next_inject('bodyEnd') }}
+</body>
+</html>

@@ -1,0 +1,31 @@
+.sidebar-inner {
+  color: $grey-dark;
+  padding: $sidebar-padding 10px;
+  text-align: center;
+  flex-column();
+}
+
+.cc-license {
+  .cc-opacity {
+    border-bottom: 0;
+    opacity: .7;
+
+    &:hover {
+      opacity: .9;
+    }
+  }
+
+  img {
+    display: inline-block;
+  }
+}
+
+@import 'sidebar-author';
+@import 'sidebar-author-links';
+@import 'sidebar-button';
+@import 'sidebar-blogroll';
+@import 'sidebar-nav';
+@import 'sidebar-toggle';
+@import 'sidebar-toc';
+@import 'site-state';
+@import 'related-posts';

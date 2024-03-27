@@ -1,0 +1,49 @@
+if (hexo-config('back2top.enable')) {
+  .back-to-top {
+    font-size: $b2t-font-size;
+
+    span {
+      margin-right: 8px;
+      if (not hexo-config('back2top.scrollpercent')) {
+        display: none;
+      }
+    }
+
+    .fa {
+      text-align: center;
+      width: $sidebar-toggle-size;
+    }
+
+    if (hexo-config('back2top.sidebar')) {
+      margin: 20px - $sidebar-offset -10px -20px;
+      // FIXME: opacity override by motion
+      opacity: 0;
+      transition: opacity $transition-ease;
+
+      &.back-to-top-on {
+        cursor: pointer;
+        opacity: $b2t-opacity;
+
+        &:hover {
+          opacity: $b2t-opacity-hover;
+        }
+      }
+    } else {
+      align-items: center;
+      bottom: $b2t-position-bottom;
+      color: $b2t-color;
+      display: flex;
+      height: $sidebar-toggle-size;
+      transition: bottom $transition-ease;
+      sidebar-toggle();
+
+      &:hover {
+        color: $sidebar-highlight;
+      }
+
+      &.back-to-top-on {
+        bottom: $b2t-position-bottom-on;
+      }
+    }
+  }
+}

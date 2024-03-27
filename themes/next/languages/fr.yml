@@ -1,0 +1,103 @@
+---
+name: Français
+title:
+  archive: Archive
+  category: Catégorie
+  tag: Mots clés
+  schedule: Plannifier
+menu:
+  home: Accueil
+  archives: Archives
+  categories: Catégories
+  tags: Mots clés
+  about: À propos
+  search: Recherche
+  schedule: Plannifier
+  sitemap: Plan de site
+  commonweal: Commonweal 404
+sidebar:
+  overview: Aperçu
+  toc: Table Des Matières
+  links: Liens
+post:
+  posted: Posté le
+  edited: Édité le
+  created: Article créé le
+  modified: Mis à jour le
+  edit: Éditer cet article
+  in: dans
+  read_more: Lire la suite
+  untitled: Sans titre
+  sticky: Épingler
+  views: Vues
+  related_posts: Articles similaires
+  copyright:
+    author: Auteur de l'article
+    link: Lien de l'article
+    post_author: Rédigé par
+    post_link: Cet article a été initialement publié sur
+    license_title: Droit d'auteur
+    license_content: "Tous les articles de ce blog sont sous licence %s, sauf mention contraire."
+    license_content_reprint: "Cet article provient d'un article publié et repris avec autorisation. Veuillez indiquer la source!"
+footer:
+  powered: "Propulsé par %s"
+  total_views: Vues totales
+  total_visitors: Total visiteurs
+widget:
+  github: Suivez-moi sur GitHub
+  chat: Discussion
+counter:
+  tag_cloud:
+    zero: Aucun tag
+    one: 1 tag au total
+    other: "%d tags au total"
+  categories:
+    zero: Aucune categorie
+    one: 1 catégorie au total
+    other: "%d catégories au total"
+  archive_posts:
+    zero: Aucun article.
+    one: 1 article.
+    other: "%d articles au total."
+state:
+  posts: articles
+  tags: mots clé
+  categories: catégories
+search:
+  placeholder: Recherche...
+  empty: "Nous n'avons trouvé aucun résultat pour la recherche : %s"
+  hits_time: "%s resultats trouvés en %s ms"
+  hits: "%s résultats trouvés"
+cheers:
+  um: Eh bien..
+  ok: Ok
+  nice: Jolie
+  good: Bien
+  great: Super
+  excellent: Excellent
+keep_on: Continue comme ça.
+symbol:
+  comma: ", "
+  period: ". "
+  colon: ": "
+reward:
+  donate: Donner
+  wechatpay: Paiement WeChat
+  alipay: Alipay
+  paypal: PayPal
+  bitcoin: Bitcoin
+  comment: Offrez-moi un café
+follow_me:
+  welcome: Bienvenue dans mes autres salons de publication
+accessibility:
+  nav_toggle: Basculer la barre de navigation
+  prev_page: Page précédente
+  next_page: Page suivante
+  back_to_top: Revenir en haut
+  select_lang: Choisir une langue
+symbols_count_time:
+  count: Caractères dans l'article
+  count_total: Caractères total
+  time: Temps de lecture
+  time_total: Temps total de lecture
+  time_minutes: minutes.

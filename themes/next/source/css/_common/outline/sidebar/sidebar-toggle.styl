@@ -1,0 +1,21 @@
+.sidebar-toggle {
+  bottom: $b2t-position-bottom-on + $sidebar-toggle-size + 5px;
+  height: $sidebar-toggle-inner-size;
+  padding: $sidebar-toggle-padding;
+  width: $sidebar-toggle-inner-size;
+  sidebar-toggle();
+}
+
+.sidebar-toggle:hover .toggle-line {
+  background: $sidebar-highlight;
+}
+
+@media (any-hover: hover) {
+  body:not(.sidebar-active) .sidebar-toggle:hover {
+    toggle-arrow(hexo-config('sidebar.position'));
+  }
+}
+
+.sidebar-active .sidebar-toggle {
+  toggle-close(hexo-config('sidebar.position'));
+}
