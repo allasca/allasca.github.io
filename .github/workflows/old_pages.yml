@@ -13,11 +13,11 @@ jobs:
         with:
           token: ${{ secrets.G_TOKEN }}
         
-      - name: Checkout submodule
-        run: |
-          git config --file=.gitmodules submodule.lib/next-theme.url https://${{ secrets.G_TOKEN }}:${{ secrets.G_TOKEN }}@github.com/next-theme/hexo-theme-next.git
-          git submodule sync
-          git submodule update --force --recursive --init --remote --depth 0
+     # - name: Checkout submodule
+     #   run: |
+     #     git config --file=.gitmodules submodule.lib/next-theme.url https://${{ secrets.G_TOKEN }}:${{ secrets.G_TOKEN }}@github.com/next-theme/hexo-theme-next.git
+     #     git submodule sync
+     #     git submodule update --force --recursive --init --remote --depth 0
       
       - name: Use Node.js 16.x
         uses: actions/setup-node@v2
