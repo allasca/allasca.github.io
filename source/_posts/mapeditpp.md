@@ -31,3 +31,7 @@ marine chart mode: OFF
 ### Download cGPSmapper V0100d
 Untuk mengubah MP format menjadi IMG garmin.
 https://github.com/allasca/assets/blob/main/cGPSmapper_v0100d.exe
+
+### Download sendmap20
+Untuk mengirim IMG file ke garmin.
+https://github.com/allasca/assets/blob/main/maps/sendmap20.zip
