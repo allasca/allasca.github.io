@@ -14,5 +14,11 @@ dengan ketentuan cucu petak harus di-merger menjadi anak petak.
 5. Klik run/logo icon play warna hijau
 6. Setelah selesai file csv akan ada di Desktop
 
+### Update plugin
+Qgis -> Plugins -> Manage and install plugins -> Install from zip
+
+Download plugin: https://github.com/allasca/PHT-Auto-Markir/blob/main/pht_auto_markir.zip
+
+
 Kode disini:
 https://github.com/allasca/assets/blob/main/qgis_markeer.py
